@@ -9,7 +9,7 @@ fonttools==4.29.1
 iniconfig==1.1.1
 joblib==1.1.0
 kiwisolver==1.3.2
--e git+ssh://git@github.com/stanford-futuredata/loa.git@73240c74c5df8f40fa7156231a2166f1d74f9408#egg=loa
+-e git+ssh://git@github.com/stanford-futuredata/loa.git@16468a95b60079d7c4683cb1680b6eba8f87ddc4#egg=loa
 -e git+ssh://git@github.com/lyft/nuscenes-devkit.git@49c36da0a85da6bc9e8f2a39d5d967311cd75069#egg=lyft_dataset_sdk
 matplotlib==3.5.1
 mccabe==0.6.1
@@ -41,5 +41,6 @@ termcolor==1.1.0
 threadpoolctl==3.1.0
 toml==0.10.2
 tomli==2.0.0
+torch==1.10.2
 tqdm==4.62.3
 typing_extensions==4.0.1
