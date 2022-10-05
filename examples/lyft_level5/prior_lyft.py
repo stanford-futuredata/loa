@@ -14,7 +14,7 @@ from constants import LYFT_DATA_DIR, PRIOR_DIR, LOA_DATA_DIR
 
 
 def get_idx_to_rot2():
-    idx_to_rot2 = defaultdict(lambda: None)
+    idx_to_rot2 = {}
     idx_to_rot2[1] = Quaternion(axis=[0, 0, 1], radians=-0.09)
     idx_to_rot2[2] = Quaternion(axis=[0, 0, 1], radians=-0.11)
     idx_to_rot2[3] = Quaternion(axis=[0, 0, 1], radians=-0.09)

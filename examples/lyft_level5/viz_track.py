@@ -185,16 +185,17 @@ def main():
 
     leftovers = [117]
     for scene_idx in leftovers:
-        base_path = f'{LOA_DATA_DIR}/ma-conf/'
+        base_path = f'{LOA_DATA_DIR}/'
         track_path = f'{base_path}/tracks/{scene_idx}'
         try:
             df = pd.read_csv(os.path.join(track_path, 'tracks.csv'))
         except:
+            print('tracks not found')
             continue
         for idx, row in df.iterrows():
             rank_idx = row['Unnamed: 0']
-            if rank_idx < 150 or rank_idx > 450:
-                continue
+            # if rank_idx < 150 or rank_idx > 450:
+            #     continue
             track_idx = row['track_idx']
             json_fname = os.path.join(track_path, f'{rank_idx}-{track_idx}.json')
             out_dir = os.path.join(base_path, 'viz', str(scene_idx), f'{rank_idx}-{track_idx}')
