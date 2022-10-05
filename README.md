@@ -10,7 +10,7 @@ Please read the [paper](https://ddkang.github.io/papers/2021/loa-vldb-workshop.p
 In the root directory, run
 ```
 pip install pandas
-pip install lyft_dataset_sdk
+pip install -U git+https://github.com/lyft/nuscenes-devkit # This must be done from source
 pip install pyclipper
 pip install -e .
 ```
